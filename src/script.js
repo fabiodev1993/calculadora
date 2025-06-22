@@ -23,6 +23,9 @@ class Calculadora {
       this.display.innerText = "";
     }else{
       this.display.innerText = eval(numero);
+      let resultado = this.display.innerText;
+      let resultadoFormatado = parseFloat(resultado).toFixed(2);
+      this.display.innerText = resultadoFormatado;
     }
   }
   
